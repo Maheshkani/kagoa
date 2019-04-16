@@ -311,17 +311,21 @@
 }
 i.fa.fa-mobile {
     color: #fff;
-    font-size: 32px;
+    font-size: 26px;
     -webkit-text-stroke-color: #69c;
     -webkit-text-stroke: 0.4px #69c;
+    width: 17px;
+    vertical-align: middle;
 }
 .text-white{color:white;}
 
-.footer-links li {
-    margin-bottom: 3px;
-    display: block;
-    width: 100%;
-    padding-bottom: 5px;
+.footer-links i {
+    display: inline-block;
+    width: 15px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    padding-right: 20px;
 }
 
 .twitter-widget li {
@@ -339,14 +343,6 @@ i.fa.fa-mobile {
     padding-bottom: 0;
     border: 0;
 }
-
-.footer-links i {
-    display: inline-block;
-    width: 25px;
-    margin-right: 10px;
-    border-right: 1px dashed rgba(255, 255, 255, 0.1);
-}
-
 .footer-recent ul{}
 .footer-recent ul li{
     margin: 0px;

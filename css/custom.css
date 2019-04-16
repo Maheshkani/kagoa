@@ -545,11 +545,14 @@ a.language-text {
 /* section aboutus */
 
 .section {
-    display: block;
-    position: relative;
     overflow: hidden;
     padding: 70px 0;
+	
 }
+.parallax.section{background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0000007d;
+    background-blend-mode: color-burn;}
 .about-item {
     background: #0000;
     border: 2px solid #fff;

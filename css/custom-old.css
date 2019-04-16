@@ -9,13 +9,13 @@
     display: block;
     width:100%;
     border-radius:0px;
-    text-align:left;
+    text-align:center;
 }
 .dropdown a.dropdown-item {
     font-size: 14px;
-	padding:.2rem .3rem;
     font-family: Nova-semibold;
     color: #336;
+    padding:.2rem;
     /* background: #36c; */
 }
 .navbar a.dropdown-item:hover {
@@ -611,7 +611,7 @@ a.language-text {
 .latestnewstext {
     padding: 0px;
     color: #fff;
-    background: url(../images_3/latestnewsicon.png) no-repeat right top;
+    background: url(../images/latestnewsicon.png) no-repeat right top;
     background-position: 6px -2px;
 
 }
@@ -762,7 +762,7 @@ h3.panel-title {
     position: relative;
     width: 100%;
     height: 450px;
-    background: url(../images_3/map-2.jpg) center center no-repeat;
+    background: url(../images/map-2.jpg) center center no-repeat;
     background-size:contain;
 }
 

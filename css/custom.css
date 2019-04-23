@@ -1169,8 +1169,8 @@ cite i {
 #accordion h5 a i.fa-minus {
     display: block;
 }
-@media screen and (max-width:767px){
+@media (max-width:767px){
     .cus-ul:before {
-    border: medium none;
+    border: none !important;
 }
 }

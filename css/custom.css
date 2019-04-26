@@ -12,6 +12,7 @@
     text-align:left;
 	background: #36c;
 	padding:0px;
+    margin-top:-1px;
 }
 .dropdown a.dropdown-item {
     font-size: 14px;

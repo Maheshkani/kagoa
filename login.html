@@ -47,14 +47,16 @@
     color:#9b9a9b;
 }
 #home {
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 #home .signup-form {
     background-color: #fff;
     box-shadow: 1px 2px 8px 0px #000;
-    padding-top:40px;
+    padding-top: 40px;
+    max-width: 330px;
+    min-height: 464px;
 }
 
 #home .signup-form .form-group input {
@@ -77,7 +79,12 @@
 #home .caption {
     padding-top: 60px;
 }
-
+p.code-typeing {
+    font-size: 19px;
+}
+.code-typeing span{
+	font-weight:bold;
+}
 h2.emp-head {
     text-align: center;
     color: #282868;
@@ -142,15 +149,44 @@ h2.emp-head {
 .cus-emp-input::placeholder {
   color: #dbdbdb!important;
   opacity: 1; /* Firefox */
+  font-size:20px;
+  font-weight:;
 }
 
+.form-group.emp-group {
+    position: relative;
+    min-height: 262px;
+    margin-bottom: 0px;
+}
 .cus-emp-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
  color: #dbdbdb!important;
+ font-size:20px;
 }
 
 .cus-emp-input::-ms-input-placeholder { /* Microsoft Edge */
  color: #dbdbdb!important;
+ font-size:20px;
 }
+
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+
+}
+
+.login-footer{
+	height:20vh;
+}
+.login-footer .custom-copyright{
+	position:absolute;
+	bottom:17px;
+
+	}
     </style>
 </head>
 
@@ -187,14 +223,13 @@ h2.emp-head {
                         <div class="form-group emp-group">
                               <input type="email" class="form-control cus-emp-input" required="required" placeholder="Employee ID">
                               <input type="password" class="form-control cus-emp-input" placeholder="Password" required="required">
-                              <div class="text-center">
-                            <p class="code-typeing"> Type: c57oz in the box below </p>
+                              <div class="text-center mt-4">
+                            <p class="code-typeing"> Type: <span>c57oz</span> in the box below </p>
                             <input type="password" class="form-control cus-emp-input" placeholder="Type here" required="required">
                         </div>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-default btn-block cus-login">LOGIN</button>
-                        </div>
+                        <button type="submit" class="btn btn-default btn-block cus-login">LOGIN</button>
+                       
                         
                     </form>
                 </div>
@@ -203,25 +238,15 @@ h2.emp-head {
     </section>
     </div>
     
-    <div class="copyrights">
-        <div class="container">
+    <div class="footer login-footer">
+        <div class="container-fluid	">
             <div class="row">
                 <div class="col-xs-6 custom-copyright">
                     Copyright © Income Tax Department, Karnataka & Goa | All Rights Reserved.
                 </div>
-                <div class="col-xs-6 ml-auto">
-                    <div class="btn-group footer-links" role="group" aria-label="...">
-                        <a href="1.html" class="btn btn-default">FAQS</a>
-                        <a href="#" class="btn btn-default">Contact Us </a>
-                        <a href="#" class="btn btn-default">Privacy Policy</a>
-                        <a href="#" class="btn btn-default">Sitemap</a>
-                    </div>
-                </div>
+               
             </div>
-            <div class="row">
-                <div class="col-12 disclaimer mt-2">Disclaimer: The contents of this website should not be construed as an exhaustive statement of law. In case of doubt, reference should always be made to the relevant provisions of the Direct Tax Laws and Rules and where necessary, notifications issued from time to time. Content provided by Income Tax Department, Bangalore. For any clarification regarding content, please contact the PRO, Income Tax Department, Bangalore.</div>
-            </div>
-        </div><!-- end container -->
+          
     </div>
     <!--  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
                                                                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->

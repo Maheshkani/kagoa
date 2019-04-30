@@ -55,7 +55,7 @@
 }
 
 .slide-text h1 span{
-	color: #cdd51f;
+	color: #36c;
 }
 
 .slide-text h2 {
@@ -151,7 +151,7 @@
     margin: 0 10px;
     display: inline-block;
     text-decoration:none;
-    font-family: 'Rubik', sans-serif;
+    font-family: Nova-bold, sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-transform: uppercase!important;
@@ -172,16 +172,16 @@
 }
 
 
-.btn11:hover{
+/*.btn11:hover{
     border: 1px solid #transparent;
 	color: #ffffff;
-}
+}*/
 .btn11::before {
     content: '';
     width: 100%;
     height: 100%;
     display: block;
-    background: #cdd51f;
+    background: #36c;
     position: absolute;  
     left: 0%;
     opacity: 1;
@@ -209,7 +209,7 @@
          -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
             transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.btn11:hover::before, .btn11:hover::before{
+/*.btn11:hover::before, .btn11:hover::before{
 	opacity:1;
   	-webkit-transform: translateX(100%);
 	     -moz-transform: translateX(100%);
@@ -222,7 +222,7 @@
 	     -moz-transform: translateX(-100%);
 	      -ms-transform: translateX(-100%);
 	          transform: translateX(-100%);
-}
+}*/
 .bg-1{background:#3366cc;}
 
 
@@ -351,7 +351,7 @@ i.fa.fa-mobile {
 }
 .footer-recent ul li i{
     font-size: 14px;
-    color: #cdd51f;
+    color: #36c;
 }
 .footer-recent ul li span {
     font-size: 12px;
@@ -396,7 +396,7 @@ i.fa.fa-mobile {
     font-size: 16px;
 }
 .social-list li a:hover{
-    border: 3px solid #cdd51f;
+    border: 3px solid #36c;
 }
 
 
@@ -480,7 +480,7 @@ a.language-text {
 }
 
 .footer-distributed .footer-company-name a:hover{
-    color: #cdd51f;
+    color: #36c;
 }
 
 
@@ -570,7 +570,7 @@ a.language-text {
 .about-icon span{
     font-size: 48px;
     color: #393939;
-    background: #cdd51f;
+    background: #36c;
     padding: 10px;
     border-radius: 10px;
 }

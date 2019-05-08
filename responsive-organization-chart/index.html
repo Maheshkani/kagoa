@@ -8,9 +8,43 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+      ul.subcls.long:before {
+        padding-bottom: 42px;
+    }
+    
+    .department .section  .hexagonimg span:first-child {
+         width: 100%;
+        margin-left: 1px;
+    }
+    
+    .department .section .hexagonimg span {
+        padding: 3px 6px !important;
+    }
+    .bgimg-1 {
+        background-image: url(dept-background.jpg);
+        background-size: cover;
+        background-position: 0px -110px;
+        background-repeat: no-repeat;
+        background-color: #bfbfbf;
+    }
+    ul.subcls.long-1:before {
+    padding-bottom: 18.2em;
+}
+.second-level-div.three {left: 70px;}
+.second-level-div.three:after {
+    padding-right: 151px;
+}
+.second-level-div.three:before {
+    left: -9px;
+}
+.f3 {
+    left: 210px;
+}
+      </style>
 </head>
 
-<body>
+<body class="bgimg-1">
   <div class="content">
     <h1>Responsive Organization Chart</h1>
     <figure class="org-chart cf">
@@ -172,7 +206,7 @@
                           </div>
                       </a>
                     </li>
-                    <ul class="subcls">
+                    <ul class="subcls long">
                       <li class="section"><a href="#" 
                         title="EMail : a.d.basavaraj@incometax.gov.in Office : CIT(JUDICIAL),BNG ">
                           <div class="hexagonimg">
@@ -214,7 +248,7 @@
                           </div>
                       </a>
                     </li>
-                    <ul class="subcls">
+                    <ul class="subcls long-1">
                       <li class="section"><a href="#" 
                         title="EMail : asha.kiran@incometax.gov.in Office : CIT(AUDIT),BNG ">
                           <div class="hexagonimg">
@@ -331,7 +365,7 @@
                       <span>PR.CIT,BNG-1</span>
                     </div>
                   </a>
-                 <div class="second-level-div">
+                 <div class="second-level-div three">
                     <div class="f1">
                       <ul class="first-tr sections">
                         <li class="second-level-li">

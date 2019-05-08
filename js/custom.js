@@ -14,6 +14,7 @@ $(function () {
      nav: true,
      dots: false,
      autoplay: true,
+	 autoplayHoverPause: true,
      autoplayTimeout: 2000,
      navText: ["<i class='fa fa-caret-left'></i>", "<i class='fa fa-caret-right'></i>"],
      responsive: {

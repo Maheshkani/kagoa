@@ -1,0 +1,83 @@
+	<!DOCTYPE html>
+	<html lang="en" class="is-animating">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>About swup</title>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/hawkgs/jqKeyboard/development/build/jqkeyboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/hawkgs/jqKeyboard/layouts/jqk.layout.en-bg.js"></script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<link rel="stylesheet" href="./assets/main.css?id=01">
+	</head>
+	<body>
+		 <header class="header">
+			<div class="logo"><a class="nav-brand"><img src="site-logo.png" alt="site-logo"/></a></div>
+		</header>
+		<main class="wrapper transition-fade" id="swup">
+			<div class="wrapper-inner">
+				<h1 g-component="SeparateText" class="fill-title">Please fill in your details</h1>
+				<form class="fill-form">
+							
+							<div class="form-group">
+								  <div class="text-center mt-4">
+								<input type="text" class="form-control cus-emp-input" placeholder="NAME *" required="required">
+							</div>
+	<div class="text-center mt-4">
+								
+								<input type="text" class="form-control cus-emp-input" placeholder="PAN *" required="required">
+							</div>
+	<div class="text-center mt-4">
+								
+								<input type="text" class="form-control cus-emp-input" placeholder="PHONE *" required="required">
+							</div>
+	<div class="text-center mt-4">
+								
+								<input type="text" class="form-control cus-emp-input" placeholder="EMAIL *" required="required">
+							</div>
+		<div class="text-center mt-2">							
+    <span>* Mandatory</span>
+</div>
+							</div>
+												
+							<div class="text-center mt-2">
+								
+    <label><input type="checkbox" class="form-control cus-emp-input" placeholder="Type here" required="required">&nbsp;I agree to the terms and conditions for providing the details and take the printouts of the desired Income tax documents.</label>
+							</div>
+							
+						   <input type="submit" class="button button--blue button--fade extra-margin"value="CONTINUE"></input>
+							
+						</form>
+	
+				
+			</div>
+		</main>
+		<div id="balloon"></div>
+  <script type="text/javascript">
+    $(function () {
+      "use strict";
+
+      var $balloon = $("#balloon"),
+        $infoTxt = $("#info-txt");
+
+      setTimeout(function () {
+        $balloon.addClass("shrink");
+      }, 500);
+
+      $infoTxt.delay(1000).fadeIn();
+
+      $(this).click(function () {
+        $("#button-hint").fadeOut();
+        $balloon.fadeOut();
+        $infoTxt.fadeOut();
+      });
+
+      jqKeyboard.init();
+    });
+  </script>
+		<script src="./assets/app.js"></script>
+	</body>
+	</html>

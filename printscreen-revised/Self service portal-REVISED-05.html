@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="is-animating">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ka goa Print</title>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/hawkgs/jqKeyboard/development/build/jqkeyboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/hawkgs/jqKeyboard/layouts/jqk.layout.en-bg.js"></script>
+  <link rel="stylesheet" href="fonts/fonts.css?id=122">
+  <link rel="stylesheet" href="./assets/main.css?id=111">
+</head>
+
+<body>
+  <header class="header">
+    <style>
+    </style>
+    <div class="logo"><a class="nav-brand"><img src="site-logo.png" alt="site-logo" /></a></div>
+  </header>
+  <main class="wrapper transition-fade" id="swup">
+    <div class="wrapper-inner">
+     
+      <a href="#" class="button button--blue button--fade">FORMS</a>
+      <a href="#" class="button button--blue button--fade">INSTRUCTIONS MANUAL</a>
+      <a href="#" class="button button--blue button--fade">KNOW ABOUT IT OFFICE</a>
+      <a href="#" class="button button--blue button--fade">GRIEVEANCES</a>
+    </div>
+  </main>
+
+  <script type="text/javascript">
+    $(function () {
+      "use strict";
+      //test
+      var $balloon = $("#balloon"),
+        $infoTxt = $("#info-txt");
+      setTimeout(function () {
+        $balloon.addClass("shrink");
+      }, 500);
+      $infoTxt.delay(1000).fadeIn();
+      $(this).click(function () {
+        $("#button-hint").fadeOut();
+        $balloon.fadeOut();
+        $infoTxt.fadeOut();
+      });
+      jqKeyboard.init();
+    });
+  </script>
+  <script>
+    $("body").delegate(".text-center input", "click", function () {
+      $('.text-center input').focus(function () {
+        $('#jq-keyboard').addClass('show');
+      }).blur(function () {
+        $('#jq-keyboard').removeClass('show');
+      });
+    });</script>
+
+  <script src="./assets/app.js"></script>
+</body>
+
+</html>

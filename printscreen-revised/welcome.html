@@ -33,35 +33,6 @@
             <a href="users.html" class="button button--blue button--fade">CONTINUE</a>
         </div>
     </main>
-
-    <script type="text/javascript">
-        $(function() {
-            "use strict";
-            //test
-            var $balloon = $("#balloon"),
-                $infoTxt = $("#info-txt");
-            setTimeout(function() {
-                $balloon.addClass("shrink");
-            }, 500);
-            $infoTxt.delay(1000).fadeIn();
-            $(this).click(function() {
-                $("#button-hint").fadeOut();
-                $balloon.fadeOut();
-                $infoTxt.fadeOut();
-            });
-            jqKeyboard.init();
-        });
-    </script>
-    <script>
-        $("body").delegate(".text-center input", "click", function() {
-            $('.text-center input').focus(function() {
-                $('#jq-keyboard').addClass('show');
-            }).blur(function() {
-                $('#jq-keyboard').removeClass('show');
-            });
-        });
-    </script>
-
     <script src="./assets/app.js"></script>
 </body>
 

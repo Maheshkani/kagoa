@@ -12,56 +12,57 @@
     <script src="https://cdn.jsdelivr.net/gh/hawkgs/jqKeyboard/development/build/jqkeyboard.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hawkgs/jqKeyboard/layouts/jqk.layout.en-bg.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <link rel="stylesheet" href="./assets/main.css?id=1">
+    <link rel="stylesheet" href="./assets/main.css?id=13">
     <style>
 
     </style>
 </head>
 
 <body>
+    <style>
+        .login-wrapper .form-group {
+            width: 473px;
+            margin: 0px auto;
+            font-size: 41px;
+        }
+        
+        .login-wrapper .form-group .mt-4:nth-child(odd),
+        .login-wrapper .form-group .mt-4:nth-child(even) {
+            padding: 0px;
+        }
+        
+        .login-wrapper .text-center.mt-4 {
+            float: none;
+            width: 100%;
+        }
+    </style>
     <header class="header">
         <div class="logo">
             <a class="nav-brand"><img src="site-logo.png" alt="site-logo" /></a>
         </div>
     </header>
     <main class="wrapper transition-fade" id="swup">
-        <div class="wrapper-inner">
-            <h1 g-component="SeparateText" class="fill-title">Please fill in your details</h1>
+        <div class="wrapper-inner login-wrapper">
+            <h1 g-component="SeparateText" class="fill-title">EMPLOYEE LOGIN</h1>
             <form class="fill-form">
 
                 <div class="form-group">
                     <div class="text-center mt-4">
-                        <input type="text" class="form-control cus-emp-input" placeholder="NAME *" required="required">
+                        <input type="text" class="form-control cus-emp-input" placeholder="EMPLOYEE ID *" required="required">
                     </div>
                     <div class="text-center mt-4">
 
-                        <input type="text" class="form-control cus-emp-input" placeholder="PAN *" required="required">
+                        <input type="password" class="form-control cus-emp-input" placeholder="password" required="required">
                     </div>
-                    <div class="text-center mt-4">
 
-                        <input type="text" class="form-control cus-emp-input" placeholder="PHONE *" required="required">
-                    </div>
-                    <div class="text-center mt-4">
 
-                        <input type="text" class="form-control cus-emp-input" placeholder="EMAIL *" required="required">
-                    </div>
-                    <div class="text-center mt-2" style="margin-bottom:30px;">
-                        <span class="mr-2"><input type="checkbox" class="form-control cus-emp-input"> English </span>
-                        <span class="mr-2"> <input type="checkbox" class="form-control cus-emp-input"> Kannada </span>
-                        <span class="mr-2"> <input type="checkbox" class="form-control cus-emp-input"> Hindi</span>
-                        <span style="float: right;margin-right:3em;">* Mandatory</span>
-                    </div>
-                    <div class="text-center mt-2">
 
-                        <label><input type="checkbox" class="form-control cus-emp-input" placeholder="Type here"
-								required="required">&nbsp;I agree to the terms and conditions for providing the details and take the
-							printouts of the desired Income tax documents.</label>
-                    </div>
+
                 </div>
 
 
 
-                <input type="submit" class="button button--blue button--fade extra-margin" value="CONTINUE"></input>
+                <input type="submit" class="button button--blue button--fade extra-margin" value="Login"></input>
 
             </form>
 

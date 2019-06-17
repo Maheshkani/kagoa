@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/gh/hawkgs/jqKeyboard/development/build/jqkeyboard.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hawkgs/jqKeyboard/layouts/jqk.layout.en-bg.js"></script>
     <link rel="stylesheet" href="fonts/fonts.css?id=122">
-    <link rel="stylesheet" href="./assets/main.css?id=8761">
+    <link rel="stylesheet" href="./assets/main.css?id=1">
 </head>
 
 <body>
@@ -34,39 +34,10 @@
                 <img src=".\assets\public.jpg" alt="public" />
                 <img src=".\assets\emp.jpg" alt="employee" />
             </div>
-            <div class="users-buttons"> <a href="#" class="button button--blue button--fade">PUBLIC USER</a>
-                <a href="#" class="button button--blue button--fade">EMPLOYEE</a></div>
+            <div class="users-buttons"> <a href="fill-form.html" class="button button--blue button--fade">PUBLIC USER</a>
+                <a href="login.html" class="button button--blue button--fade">EMPLOYEE</a></div>
         </div>
     </main>
-
-    <script type="text/javascript">
-        $(function() {
-            "use strict";
-            //test
-            var $balloon = $("#balloon"),
-                $infoTxt = $("#info-txt");
-            setTimeout(function() {
-                $balloon.addClass("shrink");
-            }, 500);
-            $infoTxt.delay(1000).fadeIn();
-            $(this).click(function() {
-                $("#button-hint").fadeOut();
-                $balloon.fadeOut();
-                $infoTxt.fadeOut();
-            });
-            jqKeyboard.init();
-        });
-    </script>
-    <script>
-        $("body").delegate(".text-center input", "click", function() {
-            $('.text-center input').focus(function() {
-                $('#jq-keyboard').addClass('show');
-            }).blur(function() {
-                $('#jq-keyboard').removeClass('show');
-            });
-        });
-    </script>
-
     <script src="./assets/app.js"></script>
 </body>
 

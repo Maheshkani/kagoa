@@ -356,6 +356,10 @@ html.is-animating .button--fade {
 	padding-bottom:20px; */
 }
 
+.no-border .logo {
+    border-bottom: medium none;
+}
+
 header.header {
     display: block;
     position: relative;
@@ -492,11 +496,11 @@ h1.fill-title {
 /*fill form keyboard css */
 
 #jq-keyboard {
-    position: absolute;
+    position: relative;
     background: #FFF;
-    width: max-content !important;
-    max-height: 0;
-    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .5);
+    width: 100% !important;
+    /* max-height: 500px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .5); */
     border-radius: 3px;
     border-bottom: 0 solid #CCC;
     padding-left: 10px;
@@ -507,15 +511,19 @@ h1.fill-title {
 }
 
 #jq-keyboard.show {
-    padding-top: 10px;
+    /*  padding-top: 10px;
     padding-bottom: 5px;
-    border-bottom-width: 3px;
+    border-bottom-width: 3px; */
     max-height: 500px
 }
 
 #jqk-lang-cont {
     margin-bottom: 10px;
     overflow: hidden
+}
+
+#jqk-lang-cont {
+    display: none;
 }
 
 #jq-keyboard .btn-row {
@@ -758,4 +766,68 @@ textarea {
     width: 290px;
     text-align: center;
     margin: 0px 7%;
+}
+
+.img1 {
+    display: block;
+    position: relative;
+    top: -9em;
+    z-index: -9;
+    width: 100px;
+    margin: auto;
+}
+
+.wrapper-inner.portal-wrapper {
+    padding: 10em 0px;
+}
+
+.img-button-div {
+    position: relative;
+    float: left;
+    margin-right: 5em;
+    margin-bottom: 3em;
+}
+
+.img-button-div button {
+    width: 300px;
+    height: 53px;
+    line-height: 18px;
+    font-size: 19px;
+}
+
+.form-group .mt-4:nth-child(odd) {
+    padding-right: 20px;
+}
+
+.form-group .mt-4:nth-child(even) {
+    padding-left: 20px;
+}
+
+.fill-form .form-group {
+    padding: 0px 10%;
+}
+
+.wrapper-inner.portal-wrapper .fill-form .form-group {
+    padding: 0px 0%;
+}
+
+.text-center .mr-2 {
+    padding-left: 2em;
+    font-size: 20px;
+}
+
+.text-center .mr-2:first-child {
+    padding-left: 0px;
+}
+
+.mt-2 input[type=checkbox] {
+    margin-right: 10px !important;
+}
+
+.form-group .text-center.mt-2:first-child {
+    margin-bottom: 30px;
+}
+
+.fill-form .img-button-div {
+    margin-right: 3px;
 }

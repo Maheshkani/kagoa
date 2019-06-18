@@ -411,6 +411,7 @@ h1.fill-title {
     width: 100%;
     box-shadow: none !important;
     text-align: center;
+    outline: none;
 }
 
 .fill-form input:focus {

@@ -11,5 +11,11 @@ $(document).ready(function () {
             {title: 'Holiday 2', datetime: new Date(2019, 7, 14)},
             {title: 'Holiday 3', datetime: new Date(2019, 7, 10)},
 			{title: 'Holiday 4', datetime: new Date(2019, 8, 10)},
+        ],
+		retire: [
+            {title: 'Ramesh', datetime: new Date(2019, 7, 16)},
+            {title: 'Suresh', datetime: new Date(2019, 7, 19)},
+            {title: 'Raj Ram Mohan Roy', datetime: new Date(2019, 7, 12)},
+			{title: 'Ramana', datetime: new Date(2019, 8, 01)},
         ]});
 });

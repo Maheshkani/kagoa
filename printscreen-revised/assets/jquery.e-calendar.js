@@ -141,6 +141,13 @@
                             cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent);
                         }
                     }
+					for (var j = 0; j < settings.retire.length; j++) {
+                        var d = settings.retire[j].datetime;
+                        if (d.getDate() == day && d.getMonth()-1 == dMonth && d.getFullYear() == dYear) {
+                            cDay.addClass('c-retire').attr('data-retire-day', d.getDate());
+                            cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent);
+                        }
+                    }
                     cDay.html(day++);
                 } else {
                     cDay.addClass('c-day-next-month c-pad-top');
@@ -148,7 +155,7 @@
                 }
                 cBody.append(cDay);
             }
-            var eventList = $('<div/>').addClass('c-event-list');
+            var eventList = $('<div/>').addClass('c-event-list').prepend( "<h2 class=\"c-h2\">Holiday List</h2>" );;
             for (var i = 0; i < settings.events.length; i++) {
                 var d = settings.events[i].datetime;
                 if (d.getMonth()-1 == dMonth && d.getFullYear() == dYear) {
@@ -176,8 +183,38 @@
                     eventList.append(item);
                 }
             }
+			var retirmentList = $('<div/>').addClass('c-retire-list').prepend( "<h2 class=\"c-h2\">Retirement List</h2>" );
+            for (var i = 0; i < settings.retire.length; i++) {
+                var d = settings.retire[i].datetime;
+                if (d.getMonth()-1 == dMonth && d.getFullYear() == dYear) {
+                    var date = lpad(d.getDate(), 2) + '/' + lpad(d.getMonth(), 2) + '/' + lpad(d.getFullYear(),4) + ' -';
+                    var item = $('<div/>').addClass('c-retire-item');
+                    var title = $('<div/>').addClass('title').html(date + '  ' + settings.retire[i].title + '<br/>');
+                    /* var description = $('<div/>').addClass('description').html(settings.events[i].description + '<br/>'); */
+                    item.attr('data-event-day', d.getDate());
+                    item.on('mouseover', mouseOverItem).on('mouseleave', mouseLeaveItem);
+                    item.append(title);
+
+                    // Add the url to the description if is set
+                    if( settings.retire[i].url !== undefined )
+                    {
+                        /**
+                         * If the setting url_blank is set and is true, the target of the url
+                         * will be "_blank"
+                         */
+                        type_url = settings.retire[i].url_blank !== undefined && 
+                                   settings.retire[i].url_blank === true ? 
+                                   '_blank':'';
+                        description.wrap( '<a href="'+ settings.retire[i].url +'" target="'+type_url+'" ></a>' );
+                    }
+
+                    retirmentList.append(item);
+                }
+            }
             $(instance).addClass('calendar');
-            cEventsBody.append(eventList);
+            cEventsBody.append(eventList).append(retirmentList);
+		/* 	$( ".c-event-list" ).before( "<p>c-retire-list</p>" );
+         $( ".c-retire-list" ).before( "<p>c-retire-list</p>" ); */
             $(instance).html(cBody).append(cEvents);
         }
 

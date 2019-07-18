@@ -21,10 +21,11 @@
 <body class="">
     <header class="header">
         <style>
-            .wrapper-inner {
-                margin-top: 35px;
-				width:1080px;
-            }
+           .wrapper-inner {
+    margin-top: 35px;
+    width: 1080px;
+    max-width: 1080px;
+}
 			.calendar {
 				cursor: default;
 				width: 100%;
@@ -34,8 +35,6 @@
 			.c-event-item:first-child {
     margin-top: 38px;
 }
-.c-event-list{
-height:49%;}
 .c-h2 {
     text-align: center;
     padding: 12px;
@@ -58,6 +57,16 @@ height:49%;}
 .c-retire-item {
     font-weight: bold;
     padding-bottom: 8px;
+}
+.c-grid {
+    float: left;
+    width: 40%;
+}
+.c-event-list {
+    height: 100%;
+    float: left;
+    width: 50%;
+    border-right: 2px solid #91accb;
 }
         </style>
         <div class="logo">

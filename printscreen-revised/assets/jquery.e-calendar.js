@@ -136,14 +136,14 @@
                     }
                     for (var j = 0; j < settings.events.length; j++) {
                         var d = settings.events[j].datetime;
-                        if (d.getDate() == day && d.getMonth()-1 == dMonth && d.getFullYear() == dYear) {
+                        if (d.getDate() == day && d.getMonth() == dMonth && d.getFullYear() == dYear) {
                             cDay.addClass('c-event').attr('data-event-day', d.getDate());
                             cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent);
                         }
                     }
 					for (var j = 0; j < settings.retire.length; j++) {
                         var d = settings.retire[j].datetime;
-                        if (d.getDate() == day && d.getMonth()-1 == dMonth && d.getFullYear() == dYear) {
+                        if (d.getDate() == day && d.getMonth() == dMonth && d.getFullYear() == dYear) {
                             cDay.addClass('c-retire').attr('data-retire-day', d.getDate());
                             cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent);
                         }
@@ -158,8 +158,8 @@
             var eventList = $('<div/>').addClass('c-event-list').prepend( "<h2 class=\"c-h2\">Holiday List</h2>" );;
             for (var i = 0; i < settings.events.length; i++) {
                 var d = settings.events[i].datetime;
-                if (d.getMonth()-1 == dMonth && d.getFullYear() == dYear) {
-                    var date = lpad(d.getDate(), 2) + '/' + lpad(d.getMonth(), 2) + '/' + lpad(d.getFullYear(),4) + ' -';
+                if (d.getMonth() == dMonth && d.getFullYear() == dYear) {
+                    var date = lpad(d.getDate(), 2) + '/' + lpad(d.getMonth()+1, 2) + '/' + lpad(d.getFullYear(),4) + ' -';
                     var item = $('<div/>').addClass('c-event-item');
                     var title = $('<div/>').addClass('title').html(date + '  ' + settings.events[i].title + '<br/>');
                     /* var description = $('<div/>').addClass('description').html(settings.events[i].description + '<br/>'); */
@@ -186,8 +186,8 @@
 			var retirmentList = $('<div/>').addClass('c-retire-list').prepend( "<h2 class=\"c-h2\">Retirement List</h2>" );
             for (var i = 0; i < settings.retire.length; i++) {
                 var d = settings.retire[i].datetime;
-                if (d.getMonth()-1 == dMonth && d.getFullYear() == dYear) {
-                    var date = lpad(d.getDate(), 2) + '/' + lpad(d.getMonth(), 2) + '/' + lpad(d.getFullYear(),4) + ' -';
+                if (d.getMonth() == dMonth && d.getFullYear() == dYear) {
+                    var date = lpad(d.getDate(), 2) + '/' + lpad(d.getMonth()+1, 2) + '/' + lpad(d.getFullYear(),4) + ' -';
                     var item = $('<div/>').addClass('c-retire-item');
                     var title = $('<div/>').addClass('title').html(date + '  ' + settings.retire[i].title + '<br/>');
                     /* var description = $('<div/>').addClass('description').html(settings.events[i].description + '<br/>'); */

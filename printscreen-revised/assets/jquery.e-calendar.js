@@ -55,6 +55,28 @@
             var d = $(this).attr('data-event-day');
             $('div.c-event[data-event-day="' + d + '"]').removeClass('c-event-over');
         };
+		
+		
+		   var mouseOverEvent1 = function () {
+            $(this).addClass('c-retire-over');
+            var d = $(this).attr('data-retire-day');
+            $('div.c-retire-item[data-retire-day="' + d + '"]').addClass('c-retire-over');
+        };
+        var mouseLeaveEvent1 = function () {
+            $(this).removeClass('c-retire-over')
+            var d = $(this).attr('data-retire-day');
+            $('div.c-retire-item[data-retire-day="' + d + '"]').removeClass('c-retire-over');
+        };
+        var mouseOverItem1 = function () {
+            $(this).addClass('c-retire-over');
+            var d = $(this).attr('data-retire-day');
+            $('div.c-retire[data-retire-day="' + d + '"]').addClass('c-retire-over');
+        };
+        var mouseLeaveItem1 = function () {
+            $(this).removeClass('c-retire-over')
+            var d = $(this).attr('data-retire-day');
+            $('div.c-retire[data-retire-day="' + d + '"]').removeClass('c-retire-over');
+        };
         var nextMonth = function () {
             if (dMonth < 11) {
                 dMonth++;
@@ -145,7 +167,7 @@
                         var d = settings.retire[j].datetime;
                         if (d.getDate() == day && d.getMonth() == dMonth && d.getFullYear() == dYear) {
                             cDay.addClass('c-retire').attr('data-retire-day', d.getDate());
-                            cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent);
+                            cDay.on('mouseover', mouseOverEvent1).on('mouseleave', mouseLeaveEvent1);
                         }
                     }
                     cDay.html(day++);
@@ -191,8 +213,8 @@
                     var item = $('<div/>').addClass('c-retire-item');
                     var title = $('<div/>').addClass('title').html(date + '  ' + settings.retire[i].title + '<br/>');
                     /* var description = $('<div/>').addClass('description').html(settings.events[i].description + '<br/>'); */
-                    item.attr('data-event-day', d.getDate());
-                    item.on('mouseover', mouseOverItem).on('mouseleave', mouseLeaveItem);
+                    item.attr('data-retire-day', d.getDate());
+                    item.on('mouseover', mouseOverItem1).on('mouseleave', mouseLeaveItem1);
                     item.append(title);
 
                     // Add the url to the description if is set

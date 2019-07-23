@@ -211,7 +211,7 @@
                 if (d.getMonth() == dMonth && d.getFullYear() == dYear) {
                     var date = lpad(d.getDate(), 2) + '/' + lpad(d.getMonth()+1, 2) + '/' + lpad(d.getFullYear(),4) + ' -';
                     var item = $('<div/>').addClass('c-retire-item');
-                    var title = $('<div/>').addClass('title').html(date + '  ' + settings.retire[i].title + '<br/>');
+                    var title = $('<div/>').addClass('title').html(/* date +  '  ' +*/ settings.retire[i].title + '<br/>');
                     /* var description = $('<div/>').addClass('description').html(settings.events[i].description + '<br/>'); */
                     item.attr('data-retire-day', d.getDate());
                     item.on('mouseover', mouseOverItem1).on('mouseleave', mouseLeaveItem1);
